@@ -18,8 +18,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/ReactiveCocoa/ReactiveObjCBridge.git", :tag => "#{s.version}" }
   s.source_files = "ReactiveObjCBridge/*.{swift,h,m}"
-  #s.private_header_files = 'ReactiveObjCBridge/RACScheduler+SwiftSupport.h'
-  s.exclude_files = 'ReactiveObjCBridge/ReactiveObjCBridge.h'
+  s.private_header_files = 'ReactiveObjCBridge/RACScheduler+SwiftSupport.h'
   #s.module_map = 'ReactiveObjCBridge/module.modulemap'
 
   s.dependency 'ReactiveObjC', '~> 3.1'
